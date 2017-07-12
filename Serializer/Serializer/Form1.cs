@@ -64,10 +64,7 @@ namespace Serializer
                 ++index;
                 SetTextBoxes();
             }
-            else
-            {
-                MessageBox.Show("You are on the last person");
-            }
+            else MessageBox.Show("You are on the last person");
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
@@ -76,10 +73,8 @@ namespace Serializer
             {
                 --index;
                 SetTextBoxes();
-            } else
-            {
-                MessageBox.Show("You are on the first person");
-            }           
+            }
+            else  MessageBox.Show("You are on the first person");          
         }
 
         private void btnFirst_Click(object sender, EventArgs e)
@@ -90,7 +85,7 @@ namespace Serializer
 
         private void btnLast_Click(object sender, EventArgs e)
         {
-            index = people.Count - 1;
+            index = people.Count-1;
             SetTextBoxes();
         }
     }
